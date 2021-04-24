@@ -37,7 +37,7 @@ class Uniq(
         }
 
         if (printOnlyUnique && bufferCount == 1 || !printOnlyUnique && bufferCount > 0) writeWithRules()
-        output.close()
+        output.flush()
     }
 
     private fun writeWithRules() {
